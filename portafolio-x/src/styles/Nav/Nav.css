@@ -1,0 +1,35 @@
+.nav-box { 
+    color: #666;
+    display: flex;
+    position: relative;
+    height: 2rem;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    
+}
+.social-container, .info-container  { 
+    display: flex;
+}
+.info-container {
+    position: absolute;
+    right: 20%;
+
+}
+.info-container > div {
+    padding: 0 1.4rem;
+   
+    justify-content: center;
+}
+.social-container {
+    justify-content: center;
+}
+.logo {
+    position: relative;
+    left: 10%;
+}
+.github, .instagram, .linkedin {
+    padding: 0 1rem;
+}
+div { 
+    border: 1px solid red;
+}
