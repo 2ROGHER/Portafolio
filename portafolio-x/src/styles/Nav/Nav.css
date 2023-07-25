@@ -1,35 +1,53 @@
-.nav-box { 
-    color: #666;
-    display: flex;
-    position: relative;
-    height: 2rem;
-    align-items: center;
-    font-family: "Raleway", sans-serif;
-    
+.nav-box {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Raleway", sans-serif;
+  color: #666;
+  border-bottom: 1px solid #999;
 }
-.social-container, .info-container  { 
-    display: flex;
+a {
+  text-decoration: none;
+  color: #666;
+  font-weight: bolder;
 }
-.info-container {
-    position: absolute;
-    right: 20%;
-
-}
-.info-container > div {
-    padding: 0 1.4rem;
-   
-    justify-content: center;
-}
-.social-container {
-    justify-content: center;
+a:hover {
+  color: purple;
 }
 .logo {
-    position: relative;
-    left: 10%;
+  display: flex;
+  align-items: center;
 }
-.github, .instagram, .linkedin {
-    padding: 0 1rem;
+.info-container {
+  display: flex;
+  align-items: center;
 }
-div { 
-    border: 1px solid red;
+.info-container > div {
+  margin: 0 2rem;
+}
+.social-container {
+  display: flex;
+  align-items: center;
+}
+.social-container > div {
+  margin: 0 1rem;
+}
+/* 
+div {
+  border: 1px solid red;
+} */
+/* Estilos para las redes sociales */
+.github a img,
+.instagram a img,
+.linkedin a img {
+  border-radius: 50%;
+  padding: 4px;
+}
+.github a img:hover,
+.instagram a img:hover,
+.linkedin a img:hover {
+  border-radius: 50%;
+  background-color: rgba(128, 0, 128, 0.2);
+  padding: 4px;
+  fill: purple;
+  transition: all ease .7s;
 }
