@@ -1,0 +1,2 @@
+export const  GET_SKILLS_IMAGES = 'GET_SKILLS_IMAGES';
+    
