@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Mono:wght@400&family=Pacifico&family=Poppins:wght@500&family=Raleway:wght@100&display=swap');
 :root {
     --font-family: "Raleway", sans-serif;
     --base-family-font: Poppins, sans-serif;
     --title-color: #666;
-    --body-margin: 10em;
+    --body-margin: 5em;
+    --roboto-mono: "IBM Plex Mono", mono;
+    --clr: #c4c4c4;
 }

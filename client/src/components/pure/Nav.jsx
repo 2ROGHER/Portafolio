@@ -11,38 +11,43 @@ const Nav = () => {
     <div className="nav-box">
       <div className="logo">logo</div>
       <div className="info-container">
-        <div className="home">
-          <Link to="/home">Home</Link>
-        </div>
-        <div className="about">
-          <Link to="/about">About</Link>
-        </div>
-        <div className="tech-stack">
-          <Link to="/tech-stack">Tech Stack</Link>
-        </div>
-        <div className="projects">
-          <Link to="/projects">Projects</Link>
-        </div>
-        <div className="contact">
-          <Link to="/contact">Contact</Link>
-        </div>
-      </div>
-      <div className="social-container">
-        <div className="github">
-          <Link to="https://github.com/2ROGHER">
-            <img src={github} alt="icon-github" />
-          </Link>
-        </div>
-        <div className="instagram">
-          <Link to="https://www.instagram.com/roger_mestanza/">
-            <img src={instagram} alt="icon-instagram"></img>
-          </Link>
-        </div>
-        <div className="linkedin">
-          <Link to="www.linkedin.com/in/roger-mestanza-martinez-70368a181">
-            <img src={linkedin} alt="icon-linkedin" />
-          </Link>
-        </div>
+        <ul>
+          <li className="item-list">
+            <div className="home">
+              <Link to="/home" className="nav-link">
+                home
+              </Link>
+            </div>
+          </li>
+          <li className="item-list">
+            <div className="about">
+              <Link to="/about" className="nav-link">
+                about
+              </Link>
+            </div>
+          </li>
+          <li className="item-list">
+            <div className="tech-stack">
+              <Link to="/tech-stack" className="nav-link">
+                tech stack
+              </Link>
+            </div>
+          </li>
+          <li className="item-list">
+            <div className="projects">
+              <Link to="/projects" className="nav-link">
+                works
+              </Link>
+            </div>
+          </li>
+          <li className="item-list">
+            <div className="contact">
+              <Link to="/contact" className="nav-link">
+                contact
+              </Link>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   );

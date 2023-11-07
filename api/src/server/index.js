@@ -21,8 +21,11 @@ server.use(morgan('dev'));
 /**
  * Lets create a new service to serve the images from the back-end;
  */
-const pathName = path.join(__dirname, "../services/svg");
-server.use('/public/images', express.static(pathName));
+const pathNameSkills = path.join(__dirname, "../services/svg");
+server.use('/public/images', express.static(pathNameSkills));
+const pathNameProjects = path.join(__dirname, "../services/images");
+console.log(pathNameProjects);
+server.use("/public/projects", express.static(pathNameProjects));
 /**
 * lets create end-point to svg images
  */

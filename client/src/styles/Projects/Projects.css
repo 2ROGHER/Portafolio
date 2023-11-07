@@ -1,0 +1,17 @@
+@import url("../../styles/variables.css");
+.pjts-container {
+    font-family: var(--font-family);
+    text-align: center;
+}
+.pjts-title {
+    font-family: var(--base-family-font);
+    font-size: 50px;
+    color: #444;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+
+}
+.pjts-container p {
+    font-weight: bolder;
+    
+}

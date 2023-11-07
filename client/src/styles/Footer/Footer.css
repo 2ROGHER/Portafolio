@@ -1,0 +1,34 @@
+@import url("../../styles/variables.css");
+
+.ft-box {
+    border-top: 3px solid #ccc;
+    display: block;
+    margin: 0 var(--body-margin);
+    
+    
+}
+.row-1, .row-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0;
+}
+.row-1 .ft-tel, .row-1 .ft-email {
+    position: absolute;
+    right: 0;
+}
+.row-1 .ft-tel {
+    right: 30%;
+}
+
+.row-2 {
+    border:1px solid orange;
+}
+.row-2 .ft-description {
+    border: 1px solid green;
+    position: absolute;
+    right: 0;
+}
+/* div, p, a  {
+    border: 1px solid orange;
+} */

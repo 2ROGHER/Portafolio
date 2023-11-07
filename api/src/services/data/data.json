@@ -1,4 +1,32 @@
-
-[{
-    
-}]
+[
+  {
+    "name": "Portafolio",
+    "title": "Personal web site",
+    "description": "Portafolio: It's a awesome web page to shows my personal brand. <br/> Here present my personal projects and hobbies to expermiment. I like to make super and useful web pages. I hope that my web site likes you. Thanks",
+    "image": "http://localhost:3001/public/projects/portafolio.png",
+    "techstack": [
+      "HTML",
+      "JS",
+      "CSS",
+      "express.js",
+      "react.js",
+      "postreSQL",
+      "Node.js"
+    ]
+  },
+  {
+    "name": "Task Manager",
+    "title": "Managment your task easly,fast and productible",
+    "description": "This is a  awesome app that let you managment your task easly and faster. Here  there're a lot options to manage your time and todo more task in a few times",
+    "image": "http://localhost:3001/public/projects/task-manager.png",
+    "techstack": [
+      "HTML",
+      "JS",
+      "CSS",
+      "express.js",
+      "react.js",
+      "postreSQL",
+      "Node.js"
+    ]
+  }
+]

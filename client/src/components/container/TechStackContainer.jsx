@@ -1,6 +1,16 @@
 import React, { useEffect, useState } from "react";
 import TechStack from "../pure/TechStack";
-import axios from 'axios';
+import axios from "axios";
+var x = 100;
+
+const handleScrollLeft = () => {
+  document.getElementsByClassName("skills-container")[0].scroll(x, 0);
+  x += 100;
+};
+const handleScrollRigth = () => {
+  document.getElementsByClassName("skills-container")[0].scroll(x, 0);
+  x -= 100;
+};
 const TechStackContainer = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -13,10 +23,14 @@ const TechStackContainer = () => {
       })
       .catch((err) => console.log(err));
   }, []);
-  
+
   return (
     <>
-      <TechStack data={data} />
+      <TechStack
+        data={data}
+        handleScrollLeft={handleScrollLeft}
+        handleScrollRigth={handleScrollRigth}
+      />
     </>
   );
 };

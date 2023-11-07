@@ -1,3 +1,73 @@
-.card-container { 
-    border: 1px solid red;
+@import url("../variables.css");
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: var(--body-margin);
+  font-family: var(--font-family);
+}
+.card-bd {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  margin-right: 1rem;
+  border-radius: 20px;
+  background-color: #ffff;
+  box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.1);
+}
+/* Styles for the image*/
+.cd-image {
+  position: relative;
+}
+.cd-image img {
+  border-radius: 20px 20px 0 0;
+  width: 300px;
+  height: 250px;
+  position: relative;
+}
+/* Styles for name */
+.cd-name > p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+/* Styles for description */
+.cd-description > p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 10px 20px;
+}
+.cd-description {
+  font-size: 15px;
+  height: 170px;
+
+  border: 1px solid red;
+}
+/* Styles for tech stack container */
+.tech-stack-title {
+  text-align: center;
+}
+.cd-stack-container {
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: bolder;
+  list-style-type: none;
+  padding-inline-start: 20px;
+  gap: 8px;
+}
+/* styles for the card footer*/
+.cd-footer {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+}
+.cd-footer div a {
+    text-decoration: underline;
+}
+.cd-footer div {
+    margin-right: 10px;
 }
